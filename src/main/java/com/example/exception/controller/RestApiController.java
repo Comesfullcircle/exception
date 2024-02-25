@@ -13,12 +13,11 @@ import java.util.List;
 public class RestApiController {
 
     @GetMapping(path = "")
-    public void hello() {
+    public void hello(){
         var list = List.of("hello");
-
         var element = list.get(1);
 
         log.info("element : {}", element);
-       // throw new RuntimeException("run time exception call");
+
     }
 }
